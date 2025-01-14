@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link rel="stylesheet" href="./6_1089_ZANA_RAZVAN_MATEI.css"/>
+</head>
+<body>
+    <h1>SVG Editor</h1>
+    <div class="all_elements" id="elements">
+        <button id="line"></button>
+        <button id="rectangle"></button>
+        <button id="ellipse" ></button>
+        <button id="undo_btn"></button>
+        <button id="toggle_path">Path mode</button>
+        <button id="bg_color_btn">Background Color</button>
+        <button id="export_svg_btn">Save svg</button>
+        <button id="export_png_btn">Save png</button>
+        <input id="shape_color" type="color"/>
+    </div>
+    <div class="svg_box">
+        <svg id="editor" height="800" width="1600" xmlns="http://www.w3.org/2000/svg">
+            <line id= "line_selected" x1="0" y1="0" x2="0" y2="0" style="stroke:blue; stroke-width:2; display:none;" />
+            <rect id="rect_select" x="0" y="0" width="0" height="0" style="fill:none;stroke:blue; stroke-width:2; display:none;" />
+            <ellipse id="ellipse_select" cx="0" cy="0" rx="0" ry="0" style="fill:none;stroke:blue; stroke-width:2; display:none;" />
+        </svg>
+    </div>
+<script src="./6_1089_ZANA_RAZVAN_MATEI.js"></script>
+</body>
+</html>

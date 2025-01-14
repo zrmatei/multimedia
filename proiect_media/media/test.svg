@@ -1,0 +1,5 @@
+<svg id="editor" height="800" width="1600" xmlns="http://www.w3.org/2000/svg">
+            <line id="line_selected" x1="0" y1="0" x2="0" y2="0" style="stroke:blue; stroke-width:2; display:none;"></line>
+            <rect id="rect_select" x="760" y="5.125" width="16" height="282" style="fill: none; stroke: blue; stroke-width: 2; display: none;"></rect>
+            <ellipse id="ellipse_select" cx="993.5" cy="111.125" rx="108.5" ry="99" style="fill: none; stroke: blue; stroke-width: 2; display: none;"></ellipse>
+        <ellipse cx="635" cy="283.625" rx="268" ry="141.5" fill="#000000"></ellipse><rect x="646" y="288.125" width="406" height="246" fill="#d53434"></rect><ellipse cx="785.5" cy="399.875" rx="111.5" ry="153.5" fill="#3439d5"></ellipse></svg>

@@ -2,9 +2,12 @@ let canvas = document.getElementById("canvas")
 canvas.style.backgroundColor = "black"
 let ctx = canvas.getContext("2d")
 let x = 0
-let y = 0
+let y = 60
 let raza = 60
 const speed = 5
+
+//OBS: Singurul lucru in plus la cerc/elipsa (daca folosesc svg) e ca la miscari trebuie sa scad raza
+// ex: x - raza > canvas.clientWidth, NU x > canvas.clientWidth simplu
 
 function drawCircle(x, y) {
     ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight)

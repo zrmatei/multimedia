@@ -19,6 +19,7 @@ function moveSVG() {
     rect.setAttribute("x", x) //actualizez valoarea lui x
 }
 
+// adun width-ul sau height-ul (in functie de caz) doar la reverse
 function moveSvgReverse() {
     x -= speed
 
@@ -29,4 +30,17 @@ function moveSvgReverse() {
     rect.setAttribute("x",x)
 }
 
-setInterval(moveSvgReverse, 16)
+function moveDiag() {
+    x += speed
+    y += speed
+
+    if(x > svg.clientWidth || y > svg.clientHeight){
+        x = -width
+        y = -height
+    }
+
+    rect.setAttribute("x",x)
+    rect.setAttribute("y",y)
+}
+
+setInterval(moveDiag, 16)
